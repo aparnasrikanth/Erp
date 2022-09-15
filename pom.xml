@@ -3,7 +3,24 @@
   <groupId>Qspiders</groupId>
   <artifactId>Com.Erp.Resources</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <!-- compiler plugin-->
   <properties> <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <maven.compiler.source>1.7</maven.compiler.source> <maven.compiler.target>1.7</maven.compiler.target> </properties>
+  
+  <!-- surefire plug in-->
+    <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M7</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  
+  
+  
   
   <!-- this is  for automation-->
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
